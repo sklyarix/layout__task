@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Glamurnenko</title>
+</head>
+<body>
+    <header  class="header fixed-top">
+        <div class="container ">
+            <div class="row flex-nowrap padding_55_0 align-items-center">
+                <div class="col-lg-7">
+                    <ul class="menu d-flex">
+                        <li class="menu__item">
+                            <a href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">
+                                Бесплатно
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">
+                                Семинары
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">
+                                Тренинги
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">
+                            Отзывы 
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contact">
+                                Контакты   
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end">
+                    <a href="#" class="social">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="21px" height="20px">
+                        <image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflAxIKOi1aDMKPAAABEklEQVQoz5WSPUtCYRiGL1IEJyEQhLMKQhAEQiAITYEQNLe0NglOTf4D+yOCk+Baez+gwSVwC8IQjOTAkavBg/oe1Owe3q/ngvfmfh4sOzD2kBKHRoIDj9Gz4HRveeaNdev21cQCzvaiIxGxqWrphKN1CI3CPZ8pf/LEC0uu6HDBO1/AeVoLvE6spP7w1LfAeWmF9nwwVu/XIOK1qh1722jTSNVygOaM1UY2gdzWGqqYTeCDBXAbQC0KwHh9Tw2sGjy1uv6+4kR93bRgg1b9Ued2bXjpo1M1sbELxZbzIJ44TWQHijX76UAmjqyHMxB2a8wdRc6AMd/ZKPIsgTaLzHtt69wGliz+NdplByZ/gEMj+QUVcNqj6/z0eAAAAABJRU5ErkJggg==" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="21px" height="20px">
+                       <image  x="0px" y="0px" width="21px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAUCAQAAADIQr64AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflAxIKODQMUQjNAAAA4UlEQVQoz5XRvUoDURCG4YeNTUCwFYSAkCogBDZYWFp7JVbBa7EUbL0AQRAiCFZiQAjYaGWVRokQCC4uY+ER/3bJ+k4zDC8zH+cI0YuzeIo6ZjGKPATRi9dYxltsB3G+VIyIuAlqTx9HHu0Qu2lvS8wqxYOQqpMmayuqeHYIWvrWP4fV6kSBVfdfIlmlOged72KdKp3/wd8Ae6ZewIMB+o7q1InH1C2M0W0S4IPN+gCnCleG6DrBRr26hSloy5u+wC/+pZaNvNI8M26k3iozQ0WDnftk7gxcpP+pYuHSjmveAcOC3QgdvqDHAAAAAElFTkSuQmCC" />
+                       </svg>
+                    </a>
+                    <a href="#" class="social">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="25px" height="16px">
+                       <image  x="0px" y="0px" width="25px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAQCAQAAABJ7xwgAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflAxIKMxTUy/HOAAABGUlEQVQoz42SwUeDcRjHP1kixoiIMSJi1xgR0alTRMRO0SFdO+0U0Wl0ik6xyE6dRnTqP+gPWEZExBhRSrN8Ouzdb++vlfV9L7/v5/d+H8/7vA/y61M098cNk2wyC8AXl3SBLarMA9Bljwv6WqeQnD6w6UCVpM5ZII2EFPwM7AV3gmmbFbEUyFUSOXWoY8z4EOxBUnOguohzvgfSdBpxN4Bns+JC8DUR68H3XBbEKR8DPIkaq4nlVFMV6UdwI4UPPQnnlmU7wV33v2ww7Ybj1DMfR/K+jg2V4ghuj410XIoj8fSHM0yrbTGOZDwfqZtzJWr5ycLPpduPXrgRcS21Lno7uqkzHnmXXFcTtpr6c60J+acWyXLPG3wD4PQ3rg3/OCsAAAAASUVORK5CYII=" />
+                       </svg>
+                    </a>
+                </div>
+                <div class="col-lg-2 d-flex flex-wrap justify-content-end">
+                    <div class=phone>8(800)707-05-13</div>
+                    <div class=phone>+7(499)350-23-35</div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section id="top">
+        <div class="container bg__main">
+            <div class="row">
+                <div class="col-lg-3 logo">
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="212px" height="147px">
+                        <image  x="0px" y="0px" width="212px" height="147px"  xlink:href="data:img/png;base64,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" />
+                    </svg>
+                    <div class="padding__45_0">
+                        <h4>Наша миссия:</h4>
+                        <p>«Миллион красиво одетых женщин»</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg__main__rest">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text__item_2">
+                        <h3 class="padding_bottom_50">Скорая стильная помощь:</h4>
+                        <p class="padding_left_right_145">Онлайн-консультация стилиста в вашем мобильном телефоне когда вам нужно: на шоппинге, во время разборв гардероба, когда подбираете комплект, просто когда нужен совет</p>
+                    </div>
+                        <img src="./img/form-reservation-bigcolor.jpg" alt="альтернативный текст" width="100%">
+                        <p class="description ">Описание картинки</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg__main__rest">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-7">
+                    <h3 class="text__item_3_heading">Как все проходит</h3>
+                    <div class="text__item_3_text">  
+                    <p>После оплаты мы подключаем вас в канал Telegram с нашим стилистом.</p>
+                    <p>Подключение происходит в рабочее время:ПН-ПТ с 10 до 19 МСК</p>
+                    <p>Сразу же вы можете писать свои вопросы.</p>
+                    <p>Ответы будут в пределах часа в рабочее время:ПН-ПТ с 10 до 19МСК</p>
+                    <p>Если вы не получаете ответ за 1 час мы продлеваем время действия услуги на 24 часа</p>
+                    <p>А если нужна помощь в выходной день?</p>
+                    </div> 
+                    <p class="text__item_3_description">Напишите об этом как можно раньше, но не менее, чем за 24 часа. Получите подтверждение стилиста. Если вы отправлятесь,к примеру, на шопинг в выходной день и вам нужно, чтобы стилист был с вами на связи, такой вариант возможен по предварительной договоренности со стилистом.</p>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container"> 
+            <div class="col-lg-12">
+                <table class="table">
+                    <tr><th class="column_1">Вы получаете</th><th class="column_2">Теория</th><th class="column_3">Практика</th><th class="column_4">VIP</th></tr>
+                    <tr><td class="column_1">Все материалы тренинга</td><td class="column_2">&#10004;</td><td class="column_3">&#10004;</td><td class="column_4">&#10004;</td></tr>
+                    <tr><td class="column_1">Проверка ДЗ</td><td class="column_2">&mdash;</td><td class="column_3">2,5 месяца *имиджмейкером команды Гламурненько.ру</td><td class="column_4">2,5 месяца *лично Екатериной Маляровой</td></tr>
+                    <tr><td class="column_1">Тренажер по стилевым типажам</td><td class="column_2">&mdash;</td><td class="column_3">&#10004;</td><td class="column_4">&#10004;</td></tr>
+                    <tr><td class="column_1">Тренажер по вещам и образам</td><td class="column_2">&mdash;</td><td class="column_3">&#10004;</td><td class="column_4">&#10004;</td></tr>
+                    <tr><th class="column_1">Цена</th><th class="column_2"><p id="7990">7990 &#8381;</p></th><th class="column_3"><p id="9990">9990 &#8381;</p></th><th class="column_4"><p id="24990">24990 &#8381;</p></th></tr>
+                    <tr><td class="column_1"></td>
+                        <td  colspan="4" class="valuta" style="text-align:center">
+                            <svg onclick="countRuble()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="var(--ci-primary-color, currentColor)" d="M291.75,308.1a105.8,105.8,0,1,0,0-211.6H136v32h39.943V276.1H136v32h39.943V352H136v32h39.943v56h32V384H304V352H207.943V308.1ZM207.943,128.5H291.75a73.8,73.8,0,1,1,0,147.6H207.943Z" class="ci-primary"/>
+                            </svg>
+                            <svg onclick="countGrivny()" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <metadata>
+                                Created by potrace 1.16, written by Peter Selinger 2001-2019
+                                </metadata>
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                                fill="#000000" stroke="none">
+                                <path d="M2220 5105 c-194 -27 -392 -83 -598 -170 -164 -69 -223 -110 -257
+                                -179 -24 -49 -27 -65 -22 -116 10 -109 87 -211 185 -244 84 -29 124 -21 309
+                                63 335 152 639 188 933 109 206 -56 369 -175 469 -346 167 -284 91 -630 -206
+                                -942 l-85 -89 -1011 -3 c-950 -3 -1014 -4 -1052 -21 -217 -98 -201 -414 25
+                                -492 14 -5 324 -11 689 -14 l664 -6 -75 -57 c-112 -84 -291 -241 -340 -298
+                                l-43 -50 -440 0 c-421 0 -442 -1 -485 -21 -60 -27 -98 -64 -126 -124 -62 -130
+                                -1 -293 131 -352 35 -16 77 -18 328 -21 158 -2 287 -5 287 -8 0 -2 -11 -41
+                                -24 -87 -43 -147 -59 -285 -53 -447 7 -212 45 -360 135 -534 172 -335 468
+                                -551 862 -633 120 -25 523 -25 660 0 281 52 647 179 757 263 130 99 85 328
+                                -82 417 -61 33 -171 30 -250 -7 -260 -121 -547 -183 -805 -173 -257 10 -414
+                                70 -554 210 -90 90 -129 155 -170 282 -69 217 -52 433 52 635 l38 75 1065 5
+                                c997 5 1067 6 1104 23 129 58 192 220 134 347 -24 54 -50 83 -104 119 l-40 26
+                                -819 3 -819 2 44 32 c24 18 149 110 276 205 l233 173 488 0 c306 0 510 4 547
+                                11 131 24 214 122 215 254 0 104 -62 200 -155 242 -35 15 -78 18 -322 21 -156
+                                2 -283 6 -283 9 0 2 18 36 40 74 127 217 189 452 177 673 -18 322 -137 587
+                                -365 808 -203 197 -432 307 -737 354 -112 17 -396 17 -525 -1z"/>
+                                </g>
+                            </svg>
+                            <svg onclick="countDollars()" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            width="79.536px" height="79.536px" viewBox="0 0 79.536 79.536" style="enable-background:new 0 0 79.536 79.536;"
+                            xml:space="preserve">
+                            <g>
+                            <path style="fill:#010002;" d="M36.081,60.766V42.145c-6.892-1.662-11.94-4.173-15.159-7.537
+                                c-3.213-3.366-4.826-7.449-4.826-12.249c0-4.868,1.82-8.951,5.456-12.252c3.643-3.304,8.479-5.209,14.529-5.706V0h7.643v4.401
+                                c5.588,0.557,10.036,2.162,13.334,4.821c3.309,2.651,5.411,6.198,6.333,10.641l-13.344,1.468c-0.803-3.5-2.915-5.864-6.323-7.109
+                                v17.38c8.436,1.926,14.184,4.422,17.233,7.498c3.065,3.065,4.588,6.996,4.588,11.801c0,5.364-1.927,9.89-5.773,13.561
+                                c-3.843,3.682-9.202,5.93-16.048,6.758v8.316h-7.643v-8.088C30,70.815,25.062,68.905,21.267,65.7
+                                c-3.798-3.2-6.219-7.716-7.275-13.551l13.756-1.248c0.562,2.366,1.616,4.422,3.169,6.136
+                                C32.459,58.761,34.184,60.004,36.081,60.766z M36.081,14.084c-2.079,0.598-3.733,1.61-4.958,3.027
+                                c-1.225,1.421-1.846,2.99-1.846,4.714c0,1.569,0.557,3.027,1.688,4.373c1.124,1.359,2.825,2.439,5.111,3.267V14.084H36.081z
+                                M43.724,61.392c2.631-0.409,4.774-1.439,6.422-3.086c1.656-1.657,2.479-3.583,2.479-5.81c0-1.979-0.698-3.697-2.076-5.137
+                                c-1.388-1.43-3.661-2.538-6.825-3.294V61.392z"/>
+                                </g>
+                            </svg>
+                            <svg onclick="countEuro()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="mdi-currency-eur" width="24" height="24" viewBox="0 0 24 24"><path d="M7.07,11L7,12L7.07,13H17.35L16.5,15H7.67C8.8,17.36 11.21,19 14,19C16.23,19 18.22,17.96 19.5,16.33V19.12C18,20.3 16.07,21 14,21C10.08,21 6.75,18.5 5.5,15H2L3,13H5.05L5,12L5.05,11H2L3,9H5.5C6.75,5.5 10.08,3 14,3C16.5,3 18.8,4.04 20.43,5.71L19.57,7.75C18.29,6.08 16.27,5 14,5C11.21,5 8.8,6.64 7.67,9H19.04L18.19,11H7.07Z" /></svg>
+                        </td>
+                    </tr>
+                    <tr><td class="column_1"></td><td class="column_2"><button>Заказать</button></td><td class="column_3"><button>Заказать</button></td><td class="column_4"><button>Заказать</button></td></tr>
+                </table>
+            </div> 
+        </div>        
+    </section>
+
+    <section class="bg__main__rest">
+        <div class="container"> 
+            <div class="col-lg-12">
+                <img src="./img/2razmera_books_preview_1200_c.png" alt="курс" width="100%">
+                    <h3 class="d-flex justify-content-center">Пакет услуг</h3>
+                    <div class=" d-flex justify-content-center flex-wrap">
+                        <div class="price_container">
+                            <div class="price_col">
+                                <div class="price_col_text">
+                                    <p style="text-align: center; margin: 0; padding: 0;">Пакет</p>
+                                    <h4>«Попробовать»</h4>
+                                    <p>Срок:</br><b>в пределах 24 часов</b></br>
+                                    Вопросов/комлектов на</br>оценку:</br><b>5 ваших луков или 5</br>вопросов</b></p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <del id="890">890 ₽</del>
+                                    <h4 id="499">499 ₽</h4>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                <button>Заказать</button>
+                                </div>
+                            </div>                         
+                        </div>
+                        <div class="price_container">
+                            <div class="price_col">
+                                <div class="price_col_text">
+                                    <p style="text-align: center; margin: 0; padding: 0;">Пакет</p><h4>«1 день»</h4>
+                                    <p>Срок:</br><b>в пределах 24 часов</b></br>
+                                        Вопросов/комлектов на</br>оценку:</br><b>до 100</b></p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <del id="3900">3900 ₽</del>
+                                    <h4 id="2900">2900 ₽</h4>
+                                </div>
+                                <div class="d-flex justify-content-center ">
+                                    <button>Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price_container">
+                            <div class="price_col">
+                                <div class="price_col_text">
+                                    <p style="text-align: center; margin: 0; padding: 0;">Пакет</p><h4>«1 месяц»</h4>
+                                    <p>Срок:</br><b>в течение месяца</b></br>
+                                    Вопросов/комлектов на</br>оценку:</br><b>неограниченно</b></p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <del id="11900">11900 ₽</del>
+                                    <h4 id="9900">9900 ₽</h4>
+                                </div>
+                                <div class="d-flex justify-content-center">   
+                                    <button>Заказать</button>
+                                </div> 
+                               
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg__main__rest">
+        <div class="container"> 
+            <div class="col-lg-12">
+                
+                <div class="d-flex flex-column">
+                    <div class="p-2  d-flex justify-content-center align-items-center">
+                        <h4 style="margin-right: 15rem;">Как все происходит</h4>
+                    </div>
+                    <div class="p-2  d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./img/first-class-stylish-help-chat-1.jpg"><img class="container__review_img" src="./img/first-class-stylish-help-chat-1.jpg" ></a>
+                        <p style="margin-left:30px;">Клиентка просит стилиста</br>помочь выбрать одну из курток</br>милитари</p>
+                    </div>
+                    <div class="p-2  d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./img/first-class-stylish-help-chat-2.jpg"><img class="container__review_img" src="./img/first-class-stylish-help-chat-2.jpg"></a>
+                        <p style="margin-left:30px;">Стилист запрашивает</br>дополнительные фотографии</br>для того чтобы выбор был</br>100% удачным</p>
+                    </div>
+                    <div class="p-2  d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./img/first-class-stylish-help-chat-3.jpg"><img class="container__review_img" src="./img/first-class-stylish-help-chat-3.jpg"></a>
+                        <p style="margin-left:30px;">Стилист анализирует вещи с</br>учетом уже имеющихся вещей</br>клиентки и помогает сделать</br>правильный выбор</p>
+                    </div>
+                    <div class="p-2  d-flex justify-content-center align-items-center">
+                        <a data-fancybox="gallery" href="./img/first-class-stylish-help-chat-4.jpg"><img class="container__review_img" src="./img/first-class-stylish-help-chat-4.jpg"></a>
+                        <p style="margin-left:30px;">Благодарная клиентка делится</br>впечатлениями от полученной</br>услуги и радостью удачных</br>покупок</p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <Footer id="contact">
+        <div class="container"> 
+            <div class="col-lg-12 ">
+                <div class="d-flex justify-content-center ">
+                    <a href="#top">Наверх	&#8657;</a>
+                   
+                </div>
+                <div class="d-flex justify-content-start flex-column">
+                    <a href="#">Вакансии</a>
+                    <a href="#">Карта сайта</a>
+                    <a href="#">Политика приватности</a>
+                    <p>Перепечатка разрешена только с активной ссылкой на нас</p>
+                    <p>&copy; <a href="#">Glamurnenko.ru</a>, 2005-2019 Тел.:8(800)707-05-13; +7(499)350-23-35</p>
+                    <p>Email: support@glamurnenko.ru</p>
+                </div>
+                
+            </div>
+        </div>
+    </Footer>
+
+    <script src='js/index.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
+
+
+
